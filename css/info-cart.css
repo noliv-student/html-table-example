@@ -1,0 +1,45 @@
+table {
+    background-color: antiquewhite;
+}
+
+table th,
+table td {
+    padding: 10px;
+}
+
+table thead th {
+    background-color: rgb(239, 212, 178);
+}
+
+table thead th:not(:last-child),
+table tbody td:not(:last-child) {
+    border-right: 2px solid white;
+}
+
+tbody tr td:nth-child(1) {
+    padding: 0;
+    height: 100px;
+}
+
+#rodent {
+    padding: 0;
+    width: 15%;
+}
+
+#name {
+    width: 15%;
+}
+
+#species {
+    width: 20%;
+}
+
+#habitat, 
+#diet {
+    width: 25%;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}

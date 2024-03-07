@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Comparison Table</title>
+
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="../css/product.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Course</a></li>
+                <li><a href="#" id="current-page">Product</a></li>
+                <li><a href="./info-chart.html">Info Chart</a></li>
+            </ul>
+        </nav>
+        <h1 id="table-tite">Product Comparison Table</h1>
+    </header>
+    <main>
+        <div class="table-wrapper">
+            <table aria-labelledby="table-tite">
+                <caption>Fig: Comparison of the features between the products</caption>
+                <thead>
+                    <tr>
+                        <th id="blank" scope="col"></th>
+                        <th id="product-a" >Product A</th>
+                        <th id="product-b">Product B</th>
+                        <th id="product-c">Product C</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th id="durability" scope="row">Durability</th>
+                        <td headers="durability product-a">10/10</td>
+                        <td headers="durability product-b">5/10</td>
+                        <td headers="durability product-c">7/10</td>
+                    </tr>
+                    <tr>
+                        <th id="design" scope="row">Design</th>
+                        <td headers="design product-a">3/10</td>
+                        <td headers="design product-b">8/10</td>
+                        <td headers="design product-c">7/10</td>
+                    </tr>
+                    <tr>
+                        <th id="usability" scope="row">Usability</th>
+                        <td headers="usability product-a">7/10</td>
+                        <td headers="usability product-b">10/10</td>
+                        <td headers="usability product-c">5/10</td>
+                    </tr>
+                    <tr>
+                        <th id="price" scope="row">Price</th>
+                        <td headers="price product-a">9/10</td>
+                        <td headers="price product-b">7/10</td>
+                        <td headers="price product-c">3/10</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+</html>

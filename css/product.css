@@ -1,0 +1,35 @@
+/* Tabel Style for Product Page */
+table {
+    background-color: rgb(211, 203, 203);
+    border-collapse: collapse;
+    white-space: nowrap;
+}
+
+table th,
+table td {
+    padding: 10px;
+    border: 2px solid #735e9f;
+}
+
+table tbody th {
+    padding-right: 15px;
+    text-align: left;
+}
+
+table thead th:first-child {
+    border-top: 0;
+    border-left: 0;
+}
+
+/* Applying color to rows*/
+table thead th:not(:first-child) {
+    background-color: #6171A9;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #7D8EC4;
+}
+
+table tbody tr:nth-child(odd) {
+    background-color: #9DADDF;
+}

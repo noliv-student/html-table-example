@@ -3,38 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Table Layout</title>
+    <title>Course Schedule Table</title>
+
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./css/schedule.css">
 </head>
 <body>
-    <h2>Workshop Schedule</h2>
-    <div>
-        <table>
-            <caption>Fig 1: Schedules for rest of workhop days</caption>
-            <thead>
-                <tr>
-                    <th>Course</th>
-                    <th>Monday</th>
-                    <th>Tuesday</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th>Math</th>
-                    <td>10:00 - 11:00</td>
-                    <td>11:00 -12:00</td>
-                </tr>
-                <tr>
-                    <th>Biology</th>
-                    <td>16:00-17:00</td>
-                    <td>17:00-18:00</td>
-                </tr>
-                <tr>
-                    <th>Capstone</th>
-                    <td>-</td>
-                    <td>-</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#" id="current-page">Course</a></li>
+                <li><a href="./pages/product-table.html">Product</a></li>
+                <li><a href="./pages/info-chart.html">Info Chart</a></li>
+            </ul>
+        </nav>
+        <h1 id="table-tite">Semester II Schedule</h1>
+    </header>
+    <main>
+        <div class="table-wrapper">
+            <table aria-labelledby="table-tite">
+                <caption>Fig: Semester 2 Course Schedule</caption>
+                <thead>
+                    <tr>
+                        <th id="course" scope="col">Course</th>
+                        <th id="time" colspan="2">Time</th>
+                        <th id="room">Room</th>
+                        <th id="day">Day</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th id="english" scope="row" rowspan="2">English II</th>
+                        <td headers="english time">09:00</td>
+                        <td headers="english time">11:00</td>
+                        <td headers="english room">L2201</td>
+                        <td headers="english day">Monday</td>
+                    </tr>
+                    <tr>
+                        <td headers="english time">09:00</td>
+                        <td headers="english time">11:00</td>
+                        <td headers="english room">L2201</td>
+                        <td headers="english day">Wednesday</td>
+                    </tr>
+                    <tr>
+                        <th id="geography" scope="row">Geography</th>
+                        <td headers="geography time">11:00</td>
+                        <td headers="geography time">12:45</td>
+                        <td headers="geography room">G107</td>
+                        <td headers="geography day">Tuesday</td>
+                    </tr>
+                    <tr>
+                        <th id="biology" scope="row">Biology</th>
+                        <td headers="biology time">09:00</td>
+                        <td headers="biology time">11:00</td>
+                        <td headers="biology room">B302</td>
+                        <td headers="biology day">Friday</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
 </body>
 </html>
